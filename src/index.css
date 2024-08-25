@@ -1,16 +1,61 @@
 @font-face {
-  font-family: "Raleway", sans-serif;
-  src: url('./fonts/Raleway-VariableFont_wght.ttf');
+  font-family: "Raleway";
+  src: url('./fonts/Raleway-Regular.ttf');
 }
 
 @font-face {
-  font-family: "Sacramento", cursive;
+  font-family: "Sacramento";
   src: url('./fonts/Sacramento-Regular.ttf');
 }
 
 body {
+  display: flex;
+  justify-content: center;
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway Light", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 5px solid #e10e50;
+  padding-top: 1.5%;
+}
+
+#lafb-logo {
+  width: 25%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+nav ul li {
+  padding: 5% 2.5%;
+  font-family: 'Raleway', sans-serif;
+  list-style: none;
+}
+
+nav ul li a:hover {
+  color: #e10e50;
+}
+
+
+
+/* MEDIA QUERIES */
+@media (min-width: 1200px) {
+  header {
+    width: 85vw;
+  }
 }
