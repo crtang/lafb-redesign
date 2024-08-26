@@ -1,10 +1,14 @@
 @font-face {
   font-family: "Raleway";
-  src: url('./fonts/Raleway-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/Raleway-VariableFont_wght.ttf');
 }
 
 @font-face {
   font-family: "Sacramento";
+  font-style: normal;
+  font-weight: 300;
   src: url('./fonts/Sacramento-Regular.ttf');
 }
 
@@ -12,7 +16,7 @@ body {
   display: flex;
   justify-content: center;
   margin: 0;
-  font-family: "Raleway Light", sans-serif;
+  font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -26,8 +30,23 @@ header {
   padding-top: 1.5%;
 }
 
+h1, h2, h3, h4 {
+  margin-bottom: 0;
+  font-family: 'Sacramento', cursive;
+  font-weight: 300;
+  color: #e10e50;
+}
+
 #lafb-logo {
   width: 25%;
+}
+
+p {
+  font-family: 'Raleway';
+}
+
+p#alert {
+  color: #b00037;
 }
 
 nav {
@@ -41,14 +60,47 @@ nav ul {
   justify-content: space-around;
 }
 
-nav ul li {
+nav ul a {
   padding: 5% 2.5%;
+  text-decoration: none;
+}
+
+nav ul li {
   font-family: 'Raleway', sans-serif;
   list-style: none;
 }
 
-nav ul li a:hover {
+a, a:visited {
+  color: #000000;
+}
+
+a:hover {
   color: #e10e50;
+}
+
+footer {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  border-top: 5px solid #e10e50;
+}
+
+footer h2 {
+  font-size: 2.5em;
+}
+
+#social-and-policies p {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-media {
+  width: 10%;
+  padding: 10px;
+}
+
+.social-media:hover {
+  stroke: #e10e50;
 }
 
 
@@ -57,5 +109,14 @@ nav ul li a:hover {
 @media (min-width: 1200px) {
   header {
     width: 85vw;
+  }
+
+  nav ul a {
+    padding: 2.5% 5vw;
+  }
+
+  .social-media {
+    width: 2.5vw;
+    height: auto;
   }
 }
