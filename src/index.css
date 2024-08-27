@@ -23,9 +23,16 @@ body {
   display: flex;
   justify-content: center;
   margin: 0;
+  padding: 0;
   font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -35,6 +42,7 @@ header {
   justify-content: center;
   border-bottom: 5px solid #e10e50;
   padding-top: 1.5%;
+  background-color: #ffffff;
 }
 
 h1, h2, h3, h4 {
@@ -103,6 +111,7 @@ footer {
   align-items: center;
   border-top: 5px solid #e10e50;
   padding-bottom: 1.5%;
+  background-color: #ffffff;
 }
 
 #store-info {

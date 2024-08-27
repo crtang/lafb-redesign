@@ -62,7 +62,7 @@ const Footer = () => {
           All information and photos belong to Love At First Bite Bakery.
           This site is simply a redesign I created, which I suppose is a bit
           similar to the redesign case studies of UI/UX designers &#40;without
-          the formal training or user research parts&#41;.
+          the formal training or user research&#41;.
         </p>
       </div>
     </footer>
