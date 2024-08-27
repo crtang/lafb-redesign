@@ -1,21 +1,38 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import Orders from '../Orders';
 
 const Home = () => {
-  // create gallery of best photos and creations
+  // create imgs array, each with a unique id, src, alt text
+
+  // render slide from imgs array objects
+  const renderSlide = () => {
+    <div className="slide">
+      <img src="" alt="" />
+    </div>
+  };
+
+  // map over imgs array with renderSlide
 
   return (
     <Fragment>
-      {/* 
-      gallery
+      <section id="front">
+        <article id="gallery">
+          <div>
+            {/* insert var for gallery slides here */}
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
 
-      intro to LAFB
+          <div id="slide-selector">
+            {/* use func to map how many dots to create */}
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </article>
 
-      delivery info (shortened)
-
-      events info
-      */}
-      <section id="gallery">
         <Orders />
       </section>
 
