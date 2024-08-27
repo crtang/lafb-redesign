@@ -1,24 +1,53 @@
 import React, { Fragment, useState } from 'react';
 import Orders from '../Orders';
+import cupcake1 from '../imgs/gallery/pecan caramel latte cupcake - lafb.jpg';
+import cupcake2 from '../imgs/gallery/lavender earl grey cupcake - lafb.jpg';
+import cupcake3 from '../imgs/gallery/mother\'s day bouquet cupcakes - lafb.jpg';
+import cupcake4 from '../imgs/gallery/mother\'s day pink rose cupcake - lafb.jpg';
+import cake1 from '../imgs/gallery/mini three-inch heart cake - lafb.jpg';
+import cake2 from '../imgs/gallery/matcha green tea cake - lafb.jpg';
+import cake3 from '../imgs/gallery/outer space cake - lafb.jpg';
+import cake4 from '../imgs/gallery/spiderman birthday cake - lafb.jpg';
+import cake5 from '../imgs/gallery/alien cake - lafb.jpg';
+import cake6 from '../imgs/gallery/newborn cake - lafb.jpg';
+import cake7 from '../imgs/gallery/twenty-first birthday cake - lafb.jpeg';
 
 const Home = () => {
-  // create imgs array, each with a unique id, src, alt text
+  // create galleryImgs array, each with a unique id, src, alt text
+  const galleryImgs = [
+    { id: 1, src: cupcake1, altText: 'pecan caramel latte cupcake' },
+    { id: 2, src: cupcake2, altText: 'lavender earl grey cupcake' },
+    { id: 3, src: cupcake3, altText: 'Mother\'s Day bouquet cupcakes' },
+    { id: 4, src: cupcake4, altText: 'Mother\'s Day pink rose cupcake' },
+    { id: 5, src: cake1, altText: 'mini three-inch heart cake' },
+    { id: 6, src: cake2, altText: 'matcha green tea cake' },
+    { id: 7, src: cake3, altText: 'outer space cake' },
+    { id: 8, src: cake4, altText: 'Spiderman birthday cake' },
+    { id: 9, src: cake5, altText: 'alien birthday cake' },
+    { id: 10, src: cake6, altText: 'newborn cake' },
+    { id: 11, src: cake7, altText: 'twenty-first birthday cake' }
+  ];
 
   // render slide from imgs array objects
-  const renderSlide = () => {
+  const renderSlide = (img) => {
     <div className="slide">
-      <img src="" alt="" />
+      <img id={img.id} src={img.src} alt={img.altText} />
     </div>
   };
 
   // map over imgs array with renderSlide
+  const slides = galleryImgs.map(renderSlide);
+
+  // move back to previous slide
+
+  // move on to next slide
 
   return (
     <Fragment>
       <section id="front">
         <article id="gallery">
-          <div>
-            {/* insert var for gallery slides here */}
+          <div class="slides-container">
+            { slides }
             <a class="prev">&#10094;</a>
             <a class="next">&#10095;</a>
           </div>
