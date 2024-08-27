@@ -12,6 +12,9 @@
   src: url('./fonts/Sacramento-Regular.ttf');
 }
 
+
+
+/* APP */
 .App {
   display: flex;
   flex-direction: column;
@@ -33,9 +36,12 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #fcedf4;
+  background-color: #fff5fa;
 }
 
+
+
+/* HEADER */
 header {
   box-sizing: border-box;
   display: flex;
@@ -51,6 +57,10 @@ h1, h2, h3, h4 {
   font-family: 'Sacramento', cursive;
   font-weight: 300;
   color: #e10e50;
+}
+
+h1 {
+  font-size: 48px;
 }
 
 #header-logo-area {
@@ -70,6 +80,7 @@ h1, h2, h3, h4 {
 
 p {
   font-family: 'Raleway';
+  line-height: 1.5em;
 }
 
 p#alert {
@@ -105,6 +116,78 @@ a:hover {
   color: #e10e50;
 }
 
+
+
+/* MAIN */
+main {
+  box-sizing: border-box;
+  padding: 1.5% 0;
+}
+
+
+
+/* ORDERS */
+.purchase-options {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 12px;
+  background-color: #e10e50;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+button:hover {
+  background-color: #b00037;
+}
+
+
+
+/* GENERAL */
+section {
+  box-sizing: border-box;
+  padding: 1.5% 0;
+}
+
+
+
+/* HOME */
+#lafb-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#motto {
+  margin-bottom: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #e10e50;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+#intro-about {
+  text-align: center;
+}
+
+.text {
+  box-sizing: border-box;
+  width: 60%;
+  text-align: left;
+}
+
+
+
+/* FOOTER */
 footer {
   box-sizing: border-box;
   display: flex;
@@ -166,6 +249,10 @@ footer h2 {
 
   nav ul a {
     padding: 2.5% 5vw;
+  }
+
+  main {
+    width: 60%;
   }
 
   footer {
