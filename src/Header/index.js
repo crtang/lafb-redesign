@@ -5,7 +5,15 @@ const Header = () => {
   return (
     <header>
       <div id="header-logo-area">
+        <p className="contact-info">
+          &#40;510&#41; 848-5727
+        </p>
+
         <img id="lafb-logo" src={lafbLogo} alt="Love At First Bite Bakery logo" />
+
+        <p className="contact-info">
+          orders@loveatfirstbitebakery.com
+        </p>
       </div>
 
       <p id="alert">

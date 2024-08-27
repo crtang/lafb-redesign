@@ -44,6 +44,17 @@ h1, h2, h3, h4 {
   color: #e10e50;
 }
 
+#header-logo-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact-info {
+  width: 33%;
+  padding: 2.5%;
+}
+
 #lafb-logo {
   width: 25%;
 }
@@ -148,7 +159,8 @@ footer h2 {
   }
 
   footer {
-    width: 85%;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
   }
 
   .social-media {
