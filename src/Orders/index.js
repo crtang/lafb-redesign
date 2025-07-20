@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Orders = () => {
   // upon clicking 'Cake Orders', trigger content change to native Orders page
   

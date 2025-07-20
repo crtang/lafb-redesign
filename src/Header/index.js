@@ -1,4 +1,3 @@
-import React from 'react';
 import lafbLogo from '../imgs/Love At First Bite logo.webp';
 
 const Header = () => {
@@ -22,10 +21,10 @@ const Header = () => {
 
       <nav>
         <ul>
-          <a href=""><li>HOME</li></a>
-          <a href=""><li>MENU</li></a>
-          <a href=""><li>ORDER</li></a>
-          <a href=""><li>PRESS</li></a>
+          <a href="#"><li>HOME</li></a>
+          <a href="#"><li>MENU</li></a>
+          <a href="#"><li>ORDER</li></a>
+          <a href="#"><li>PRESS</li></a>
         </ul>
       </nav>
     </header>
